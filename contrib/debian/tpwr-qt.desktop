@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=TPWR
+Comment=TPWR P2P Cryptocurrency
+Comment[fr]=TPWR, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=TPWR, eşten eşe kriptografik sanal para birimi
+Exec=tpwr-qt %u
+Terminal=false
+Type=Application
+Icon=tpwr128
+MimeType=x-scheme-handler/tpwr;
+Categories=Office;Finance;

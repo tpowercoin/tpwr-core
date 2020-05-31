@@ -1,0 +1,26 @@
+# /etc/conf.d/tpwrd: config file for /etc/init.d/tpwrd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/tpwr/tpwr.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/tpwrd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/tpwrd.pid"
+
+# Where to write tpwrd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/tpwrd"
+
+# User and group to own tpwrd process
+#BITCOIND_USER="tpwr"
+#BITCOIND_GROUP="tpwr"
+
+# Path to tpwrd executable
+#BITCOIND_BIN="/usr/bin/tpwrd"
+
+# Nice value to run tpwrd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""
