@@ -8,6 +8,7 @@ TPWR is the basic block chain structure on which the complete system is built.
 - low transaction fees and energy expenditure, and staking rewards to all participants in the network
 - Masternode technology used to secure the network and provide the above features, with collateral of 1777 TPWR
 - Decentralized blockchain voting utilizing Masternode technology to form a DAO. The blockchain will distribute monthly treasury funds based on successful proposals submitted by the community and voted on by the DAO.
+- generate signature Pool for administrate Platform
 
 20k TPWR were pre-mined.
 
