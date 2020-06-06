@@ -91,9 +91,9 @@ public:
     {
         networkID = CBaseChainParams::MAIN;
         strNetworkID = "main";
-        pchMessageStart[0] = 0x1e;
+        pchMessageStart[0] = 0x1f;
         pchMessageStart[1] = 0x39;
-        pchMessageStart[2] = 0x4b;
+        pchMessageStart[2] = 0x4a;
         pchMessageStart[3] = 0x75;
         vAlertPubKey = ParseHex("0317dc37cb1011c0a162fc113358cdad2a12b85a0f841c4c48346bd85f45ec5c1d");
         nDefaultPort = 55555;
@@ -167,7 +167,7 @@ public:
         nPoolMaxTransactions = 3;
         strSporkKey = "04aae108e6b01a8301c49b7457f6709340a64acf631f1182b41942b34c461e17f67c33a8df08781cc83b6ccae5962c0b54b2ed8b272394e7571089731b10121b80";
         strObfuscationPoolDummyAddress = "TPgV1vw2rMmKpvBbnUyfvfFYs2rTjJiDrj";
-        nStartMasternodePayments = 1590672602;
+        nStartMasternodePayments = 1591401600;
 
         /** Zerocoin */
         zerocoinModulus = "0xc95577b6dce0049b0a20c779af38079355abadde1a1d80c353f6cb697a7ae5a087bad39caa5798478551d0f9d91e6267716506f32412de1d19d17588765eb9502b85c6a18abdb05791cfd8b734e960281193705eeece210920cc922b3af3ceb178bf12c22eb565d5767fbf19545639be8953c2c38ffad41f3371e4aac750ac2d7bd614b3faabb453081d5d88fdbb803657a980bc93707e4b14233a2358c97763bf28f7c933206071477e8b371f229bc9ce7d6ef0ed7163aa5dfe13bc15f7816348b328fa2c1e69d5c88f7b94cee7829d56d1842d77d7bb8692e9fc7b7db059836500de8d57eb43c345feb58671503b932829112941367996b03871300f25efb5";
@@ -197,8 +197,8 @@ public:
     {
         networkID = CBaseChainParams::TESTNET;
         strNetworkID = "test";
-        pchMessageStart[0] = 0x43;
-        pchMessageStart[1] = 0x76;
+        pchMessageStart[0] = 0x42;
+        pchMessageStart[1] = 0x77;
         pchMessageStart[2] = 0x65;
         pchMessageStart[3] = 0xba;
         vAlertPubKey = ParseHex("042292b1f401860eea99e1a8a103effbd7e1c013a59a1a3a0c91c9d1997a0bc6f338567278c11344802838c107055bf7c1641eaed61e879245c255a4f5be5746fc");
@@ -254,7 +254,7 @@ public:
         nPoolMaxTransactions = 2;
         strSporkKey = "04aae108e6b01a8301c49b7457f6709340a64acf631f1182b41942b34c461e17f67c33a8df08781cc83b6ccae5962c0b54b2ed8b272394e7571089731b10121b80";
         strObfuscationPoolDummyAddress = "TFzPUGYNeL6LCxx86ERk2gWSSXzYveQtCy";
-        nStartMasternodePayments = 1590672602;
+        nStartMasternodePayments = 1591401600;
         nBudget_Fee_Confirmations = 3; // Number of confirmations for the finalization fee. We have to make this very short
                                        // here because we only have a 8 block finalization window on testnet
     }
@@ -276,9 +276,9 @@ public:
         networkID = CBaseChainParams::REGTEST;
         strNetworkID = "regtest";
         strNetworkID = "regtest";
-        pchMessageStart[0] = 0x69;
+        pchMessageStart[0] = 0x68;
         pchMessageStart[1] = 0xcf;
-        pchMessageStart[2] = 0x7e;
+        pchMessageStart[2] = 0x7d;
         pchMessageStart[3] = 0xac;
         nSubsidyHalvingInterval = 150;
         nEnforceBlockUpgradeMajority = 750;

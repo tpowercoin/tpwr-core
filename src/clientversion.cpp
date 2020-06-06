@@ -45,7 +45,7 @@ const std::string CLIENT_NAME("TPWR Core");
 //! git will put "#define GIT_ARCHIVE 1" on the next line inside archives.
 #ifdef GIT_ARCHIVE
 #define GIT_COMMIT_ID "c9cf0fa"
-#define GIT_COMMIT_DATE "Fri May 29 18:00:00 2020 +0200"
+#define GIT_COMMIT_DATE "Fri Jun 05 15:08:00 2020 +0200"
 #endif
 
 #define BUILD_DESC_WITH_SUFFIX(maj, min, rev, build, suffix) \
