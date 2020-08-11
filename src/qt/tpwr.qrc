@@ -58,7 +58,7 @@
         <file alias="mgithub">res/icons/mgithub.png</file>
         <file alias="mmobil">res/icons/mmobil.png</file>
         <file alias="mstatus">res/icons/mstatus.png</file>
-        <file alias="mtwitter">res/icons/mtwitter</file>
+        <file alias="mtwitter">res/icons/mtwitter.png</file>
         <file alias="mshop">res/icons/mshop.png</file>
         <file alias="mrapids">res/icons/mrapids.png</file>
         <file alias="maltmarket">res/icons/maltmarket.png</file>	
