@@ -787,7 +787,7 @@ void BitcoinGUI::ExplorerClicked()
 
 void BitcoinGUI::GithubClicked()
 {
-    QString link = "https://github.com/tpowercoin/tpwr-core/releases";
+    QString link = "https://github.com/tpowercoin/tpwr-core";
     QDesktopServices::openUrl(QUrl(link));
 }
 
