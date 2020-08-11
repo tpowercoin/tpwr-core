@@ -12,7 +12,7 @@
 #include "spork.h"
 
 //
-// Bootup the Masternode, look for a 35000 TPWR input and register on the network
+// Bootup the Masternode, look for a 1777 TPWR input and register on the network
 //
 void CActiveMasternode::ManageStatus()
 {
