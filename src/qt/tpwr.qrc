@@ -53,6 +53,15 @@
         <file alias="browse">res/icons/browse.png</file>
         <file alias="staking_active">res/icons/staking_active.png</file>
         <file alias="staking_inactive">res/icons/staking_inactive.png</file>
+        <file alias="mwebsite">res/icons/mwebsite.png</file>
+        <file alias="mexplorer">res/icons/mexplorer.png</file>
+        <file alias="mgithub">res/icons/mgithub.png</file>
+        <file alias="mmobil">res/icons/mmobil.png</file>
+        <file alias="mstatus">res/icons/mstatus.png</file>
+        <file alias="mtwitter">res/icons/mtwitter</file>
+        <file alias="mshop">res/icons/mshop.png</file>
+        <file alias="mrapids">res/icons/mrapids.png</file>
+        <file alias="maltmarket">res/icons/maltmarket.png</file>	
     </qresource>
     <qresource prefix="/css">
         <file alias="default">res/css/default.css</file>

@@ -39,6 +39,7 @@
 #include <QAction>
 #include <QApplication>
 #include <QDateTime>
+#include <QDesktopServices>
 #include <QDesktopWidget>
 #include <QDragEnterEvent>
 #include <QIcon>
@@ -416,6 +417,16 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
     openMNConfEditorAction->setStatusTip(tr("Open Masternode configuration file"));
     showBackupsAction = new QAction(QIcon(":/icons/browse"), tr("Show Automatic &Backups"), this);
     showBackupsAction->setStatusTip(tr("Show automatically created wallet backups"));
+	
+    showWebsiteAction = new QAction(QIcon(":/icons/mwebsite"), tr("&Website"), this);
+    showExplorerAction = new QAction(QIcon(":/icons/mexplorer"), tr("&Explorer"), this);
+    showGithubAction = new QAction(QIcon(":/icons/mgithub"), tr("&Source"), this);
+    showMobileAction = new QAction(QIcon(":/icons/mmobil"), tr("&Mobile app"), this);
+    showStatusAction = new QAction(QIcon(":/icons/mstatus"), tr("&Checkmycoin"), this);
+    showTwitterAction = new QAction(QIcon(":/icons/mtwitter"), tr("&Twitter"), this);
+    showShopAction = new QAction(QIcon(":/icons/mshop"), tr("&Shop"), this);
+    showRapidsAction = new QAction(QIcon(":/icons/mrapids"), tr("&Rapids.host"), this);
+    showAltmarketAction = new QAction(QIcon(":/icons/maltmarket"), tr("&Altmarkets TPWR/BTC"), this);
 
     usedSendingAddressesAction = new QAction(QIcon(":/icons/address-book"), tr("&Sending addresses..."), this);
     usedSendingAddressesAction->setStatusTip(tr("Show the list of used sending addresses and labels"));
@@ -444,6 +455,17 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
     connect(optionsAction, SIGNAL(triggered()), this, SLOT(optionsClicked()));
     connect(toggleHideAction, SIGNAL(triggered()), this, SLOT(toggleHidden()));
     connect(showHelpMessageAction, SIGNAL(triggered()), this, SLOT(showHelpMessageClicked()));
+	
+    connect(showWebsiteAction, SIGNAL(triggered()), this, SLOT(WebsiteClicked()));
+    connect(showExplorerAction, SIGNAL(triggered()), this, SLOT(ExplorerClicked()));
+    connect(showGithubAction, SIGNAL(triggered()), this, SLOT(GithubClicked()));
+    connect(showMobileAction, SIGNAL(triggered()), this, SLOT(MobileClicked()));
+    connect(showStatusAction, SIGNAL(triggered()), this, SLOT(StatusClicked()));
+    connect(showTwitterAction, SIGNAL(triggered()), this, SLOT(TwitterClicked()));
+    connect(showShopAction, SIGNAL(triggered()), this, SLOT(ShopClicked()));
+    connect(showRapidsAction, SIGNAL(triggered()), this, SLOT(RapidsClicked()));
+    connect(showAltmarketAction, SIGNAL(triggered()), this, SLOT(AltmarketClicked()));
+	
 #ifdef ENABLE_WALLET
     if (walletFrame) {
         connect(encryptWalletAction, SIGNAL(triggered(bool)), walletFrame, SLOT(encryptWallet(bool)));
@@ -519,6 +541,18 @@ void BitcoinGUI::createMenuBar()
         tools->addAction(openBlockExplorerAction);
     }
 
+	QMenu* tpwr = appMenuBar->addMenu(tr("&TPWR Info"));
+	tpwr->addAction(showWebsiteAction);
+	tpwr->addAction(showExplorerAction);
+	tpwr->addAction(showGithubAction);
+	tpwr->addSeparator();
+	tpwr->addAction(showAltmarketAction);
+	tpwr->addAction(showStatusAction);
+	tpwr->addAction(showTwitterAction);
+	tpwr->addAction(showMobileAction);
+	tpwr->addAction(showShopAction);
+	tpwr->addAction(showRapidsAction);
+	
     QMenu* help = appMenuBar->addMenu(tr("&Help"));
     help->addAction(showHelpMessageAction);
     help->addSeparator();
@@ -737,6 +771,60 @@ void BitcoinGUI::showHelpMessageClicked()
     HelpMessageDialog* help = new HelpMessageDialog(this, false);
     help->setAttribute(Qt::WA_DeleteOnClose);
     help->show();
+}
+
+void BitcoinGUI::WebsiteClicked()
+{
+    QString link = "https://t-powercoin.com/";
+    QDesktopServices::openUrl(QUrl(link));
+}
+
+void BitcoinGUI::ExplorerClicked()
+{
+    QString link = "https://chain.t-powercoin.com/";
+    QDesktopServices::openUrl(QUrl(link));
+}
+
+void BitcoinGUI::GithubClicked()
+{
+    QString link = "https://github.com/tpowercoin/tpwr-core/releases";
+    QDesktopServices::openUrl(QUrl(link));
+}
+
+void BitcoinGUI::MobileClicked()
+{
+    QString link = "https://play.google.com/store/apps/details?id=net.harcomiawallet.android";
+    QDesktopServices::openUrl(QUrl(link));
+}
+
+void BitcoinGUI::StatusClicked()
+{
+    QString link = "https://checkmycoin.com/coins/the-power-coin/";
+    QDesktopServices::openUrl(QUrl(link));
+}
+
+void BitcoinGUI::TwitterClicked()
+{
+    QString link = "https://twitter.com/TPWR9";
+    QDesktopServices::openUrl(QUrl(link));
+}
+
+void BitcoinGUI::ShopClicked()
+{
+    QString link = "http://www.cryptofanshop.eu/product-category/tpwr/";
+    QDesktopServices::openUrl(QUrl(link));
+}
+
+void BitcoinGUI::RapidsClicked()
+{
+    QString link = "https://rapids.host/";
+    QDesktopServices::openUrl(QUrl(link));
+}
+
+void BitcoinGUI::AltmarketClicked()
+{
+    QString link = "https://altmarkets.io/trading/tpwrbtc";
+    QDesktopServices::openUrl(QUrl(link));
 }
 
 #ifdef ENABLE_WALLET

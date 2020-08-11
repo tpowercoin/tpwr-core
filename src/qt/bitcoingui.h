@@ -126,6 +126,15 @@ private:
     QAction* openBlockExplorerAction;
     QAction* showHelpMessageAction;
     QAction* multiSendAction;
+    QAction* showWebsiteAction;
+    QAction* showExplorerAction;
+    QAction* showGithubAction;
+    QAction* showMobileAction;
+    QAction* showStatusAction;
+    QAction* showTwitterAction;
+    QAction* showShopAction;
+    QAction* showRapidsAction;
+    QAction* showAltmarketAction;
 
     QSystemTrayIcon* trayIcon;
     QMenu* trayIconMenu;
@@ -224,6 +233,25 @@ private slots:
 
     /** Show open dialog */
     void openClicked();
+	
+	/** Open TPWR Website */
+	void WebsiteClicked();
+	/** Open TPWR Explorer */
+	void ExplorerClicked();
+	/** Open Github Source */
+	void GithubClicked();
+	/** Open Harcomia Mobile link */
+	void MobileClicked();
+	/** Open Checkmycoin.com   */
+	void StatusClicked();
+	/** Open Twitter */
+	void TwitterClicked();
+	/** Open TPWR shop */
+	void ShopClicked();
+	/** Open Rapids.host Hosting */
+	void RapidsClicked();
+	/** Open Altmarkets.io exchange */
+	void AltmarketClicked();
 
 #endif // ENABLE_WALLET
     /** Show configuration dialog */
