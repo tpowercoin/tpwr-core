@@ -781,7 +781,7 @@ void BitcoinGUI::WebsiteClicked()
 
 void BitcoinGUI::ExplorerClicked()
 {
-    QString link = "https://chain.t-powercoin.com/";
+    QString link = "https://explorer.t-powercoin.com/";
     QDesktopServices::openUrl(QUrl(link));
 }
 
