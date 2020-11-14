@@ -49,7 +49,7 @@ static const int MAX_URI_LENGTH = 255;
 #define SPINNER_FRAMES 35
 
 #define QAPP_ORG_NAME "TPWR"
-#define QAPP_ORG_DOMAIN "tpwr.org"
+#define QAPP_ORG_DOMAIN "t-powercoin.com"
 #define QAPP_APP_NAME_DEFAULT "TPWR-Qt"
 #define QAPP_APP_NAME_TESTNET "TPWR-Qt-testnet"
 
